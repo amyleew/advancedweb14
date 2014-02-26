@@ -1,0 +1,43 @@
+<!-- targeting selectors 
+		http://www.w3.org/TR/selectors
+		 -->
+
+		 <html>
+
+<header><title>
+</title></header>
+
+<body>
+
+
+<style type="text/css">
+
+	/* descendant selectors */
+	.jcarousel ul { outline: 1px dotted blue; }
+
+
+	/* direct descendant */
+	.jcarousel > ul { border: 1px solid red; }
+
+
+	/* siblings around */
+	.jcarousel ul+ul { background: red; }
+
+</style>
+
+<div class="jcarousel">
+		<ul class="slideshow-horiztonal">
+			<li>Test Item 1</li>
+			<li>Test Item </li>
+
+			<ul>
+				<li>Sub Test Item</li>
+			</ul>
+		</ul>
+	</div>
+
+<!-- include livereload -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>
